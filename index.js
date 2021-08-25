@@ -20,7 +20,7 @@ app.use(bodyParser.json())
 
 //////////////////////////////////////////////////////////////////////////////////////////
 mongoose.set('useFindAndModify', false);
-const mongoUri = "mongodb+srv://shahiba:Edaf6B8Qw3CcAQzh@cluster0.ff0ug.mongodb.net/<dbname>?retryWrites=true&w=majority"
+const mongoUri = MONGO_DB_URI
 mongoose.connect(mongoUri,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
